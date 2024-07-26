@@ -28,7 +28,7 @@ RUN apt-get update && DEBIAN_FRONTEND="noninteractive" apt-get install -y --no-i
     openssh-client \
     openjdk-11-jdk-headless \
     maven \
-    python3-dev \
+    python-dev \
     subversion \
     automake \
     aha \
@@ -41,7 +41,7 @@ RUN apt-get update && DEBIAN_FRONTEND="noninteractive" apt-get install -y --no-i
     gh \
     nodejs \
     graphviz \
-    python3-psycopg2 \
+    python-psycopg2 \
     swi-prolog
 
 # Install run-time dependencies for Soufflé.
@@ -95,7 +95,7 @@ COPY scripts/obodash /tools
 RUN chmod +x /tools/obodash && \
     git clone --depth 1 https://github.com/OBOFoundry/OBO-Dashboard.git && \
     cd OBO-Dashboard && \
-    python3 -m pip install -r requirements.txt && \
+    python -m pip install -r requirements.txt && \
     echo " " >> Makefile && \
     echo "build/robot.jar:" >> Makefile && \
     echo "	echo 'skipped ROBOT jar download.....' && touch \$@" >> Makefile && \

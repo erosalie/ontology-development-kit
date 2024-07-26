@@ -368,7 +368,7 @@ custom_makefile_header: |
 # v1.2.24 (6 November 2020)
 - Updated ROBOT to new version 1.7.1
 - Added the (highly experimental) ability to ODK to run OBO dashboard (see [instructions and examples](https://github.com/INCATools/ontology-development-kit#running-obo-dashboard-with-odk)).
-- Added more python packages to ODK, see [requirements.txt](requirements.txt.full).
+- Added more python packages to ODK, see [requirements.txt](requirements.txt).
 - Added a new set of configurations for ROBOT report. WARNING:
 `report_fail_on` option is now deprecated in favour of a new block of options:
 
